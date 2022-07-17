@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import TinderCard from "react-tinder-card";
 import { useState } from "react";
-import { SwipeDown } from "@mui/icons-material";
+
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,9 +9,9 @@ const StyledContainer = styled.div`
   gap: 20px;
 `;
 const StyledWrapper = styled.div`
-    display: flex;
-    justify-content:center;
-    margin-top:10vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
 `;
 const TinderCards = () => {
   const [people, setPeople] = useState([
@@ -52,19 +52,12 @@ const TinderCards = () => {
             onCardLeftScreen={() => outOfFrame(person.name)}
           >
             <div
-              style={{ backgroundImage: `url(${person.url})`}}
+              style={{ backgroundImage: `url(${person.url})` }}
               className="card"
-            >
-            </div>
+            ></div>
           </TinderCard>
         ))}
       </StyledWrapper>
-      {/* {people.map((person) => (
-        <>
-          <h1>{person.name}</h1>
-          <StyledImage src={person.url} />
-        </>
-      ))} */}
     </StyledContainer>
   );
 };

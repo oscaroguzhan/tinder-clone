@@ -1,15 +1,17 @@
 import Header from "./components/Header";
+import SwipeButtons from "./components/SwipeButtons";
 import TinderCards from "./components/TinderCards";
 
 function App() {
   return (
-    <div className="app">
+    <>
       {/* Header */}
       <Header />
       {/* tinder card */}
-      <TinderCards/>
+      <TinderCards />
       {/* swipe buttons */}
-    </div>
+      <SwipeButtons />
+    </>
   );
 }
 
