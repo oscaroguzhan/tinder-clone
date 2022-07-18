@@ -1,3 +1,4 @@
+
 import Header from "./components/Header";
 import SwipeButtons from "./components/SwipeButtons";
 import TinderCards from "./components/TinderCards";
@@ -11,6 +12,7 @@ function App() {
       <TinderCards />
       {/* swipe buttons */}
       <SwipeButtons />
+      
     </>
   );
 }
